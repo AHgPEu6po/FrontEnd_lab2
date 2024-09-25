@@ -1,0 +1,150 @@
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    border: 1px solid #000000;
+}
+
+th, td {
+    border: 1px solid #000000;
+    padding: 8px;
+    text-align: center;
+}
+
+/* Стилі для першого рядка */
+tr:first-child {
+    background-color: #078f8f;
+    color: white;
+}
+
+/* Стилі для другого рядка */
+tr:nth-child(2) {
+    background-color: #f5f507;
+    color: black;
+}
+
+/* Hover ефект для першого і другого рядків */
+tr:first-child:hover {
+    background-color: #f5f507;
+    color: black;
+}
+
+tr:nth-child(2):hover {
+    background-color: #078f8f;
+    color: white;
+}
+
+/* Спільні стилі */
+.square {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: #f0f0f0;
+    border-radius: 25px;
+    border: 1px solid #000000;
+    margin: 20px;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    background-color: #f44336;
+    border-radius: 50%;
+    border: 1px solid #000000;
+}
+
+.rectangle {
+    background-color: #000000;
+}
+
+.vertical {
+    height: 95px;
+    width: 5px;
+}
+
+.horizontal {
+    height: 5px;
+    width: 75px;
+}
+
+/* Позиціонування з використанням position */
+.toppos {
+    position: absolute;
+    top: 10px;
+    left: 90px;
+}
+
+.downpos {
+    position: absolute;
+    bottom: 10px;
+    left: 90px;
+}
+
+.leftpos {
+    position: absolute;
+    top: 90px;
+    left: 10px;
+}
+
+.rightpos {
+    position: absolute;
+    top: 90px;
+    right: 10px;
+}
+
+.verticalpos {
+    position: absolute;
+    height: 95px;
+    width: 5px;
+    top: 20px;
+    left: 100px;
+    transform: translateX(-50%);
+}
+
+.horizontalpos {
+    position: absolute;
+    height: 5px;
+    width: 75px;
+    top: 100px;
+    left: 85px;
+    transform: translateY(-50%);
+}
+
+/* Позиціонування з використанням transform */
+.second {
+    left: 300px;
+}
+
+.toptran {
+    position: absolute;
+    transform: translate(90px, 10px);
+}
+
+.downtran {
+    position: absolute;
+    transform: translate(90px, 170px);
+}
+
+.lefttran {
+    position: absolute;
+    transform: translate(10px, 90px);
+}
+
+.righttran {
+    position: absolute;
+    transform: translate(170px, 90px);
+}
+
+.verticaltran {
+    position: absolute;
+    height: 95px;
+    width: 5px;
+    transform: translate(98px, 20px);
+}
+
+.horizontaltran {
+    position: absolute;
+    height: 5px;
+    width: 75px;
+    transform: translate(85px, 98px);
+}
